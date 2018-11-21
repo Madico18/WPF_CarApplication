@@ -1,0 +1,224 @@
+﻿<Page x:Class="CarApplication.Pages.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CarApplication.Pages"
+      mc:Ignorable="d"      
+      Title="MainPage">   
+    
+    <Grid>          
+        <WrapPanel Margin="25 10 0 0">
+            <StackPanel Orientation="Horizontal" Margin="10 10 60 3" Width="100">
+                <Image x:Name="audiImg" Height="32" Width="32" Source="../Images/audi.png"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink Click="Hyperlink_Click">audi</Hyperlink>
+                </TextBlock>                
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 60 3" Width="100">
+                <Image Height="32" Width="32" Source="../Images/bmw.png"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink Click="Hyperlink_Click">bmw</Hyperlink>
+                </TextBlock>                
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 60 3" Width="100">
+                <Image Height="32" Width="32" Source="../Images/chrysler.png"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink Click="Hyperlink_Click">chrysler</Hyperlink>
+                </TextBlock>              
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 60 3" Width="100">
+                <Image Height="32" Width="32" Source="../Images/citroen.png"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink Click="Hyperlink_Click">citroen</Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 60 3" Width="100">
+                <Image Height="32" Width="32" Source="../Images/dacia.png"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink Click="Hyperlink_Click">dacia</Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 60 3" Width="100">
+                <Image Height="32" Width="32" Source="../Images/dodge.png"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink Click="Hyperlink_Click">dodge</Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 60 3" Width="100">
+                <Image Height="32" Width="32" Source="../Images/honda.png"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink Click="Hyperlink_Click">honda</Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 60 3" Width="100">
+                <Image Height="32" Width="32" Source="../Images/abarth.png"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink Click="Hyperlink_Click">abarth</Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 60 3" Width="100">
+                <Image Height="32" Width="32" Source="../Images/alfa romeo.png"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink Click="Hyperlink_Click">alfa romeo</Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 60 3" Width="100">
+                <Image Height="32" Width="32" Source="../Images/chevrolet.png"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink Click="Hyperlink_Click">chevrolet</Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 60 3" Width="100">
+                <Image Height="32" Width="32" Source="../Images/fiat professional.png"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink Click="Hyperlink_Click">fiat professional</Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 60 3" Width="100">
+                <Image Height="32" Width="32" Source="../Images/fiat.png"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink Click="Hyperlink_Click">fiat</Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 60 3" Width="100">
+                <Image Height="32" Width="32" Source="../Images/ford.png"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink Click="Hyperlink_Click">ford</Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 60 3" Width="100">
+                <Image Height="32" Width="32" Source="../Images/infiniti.png"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink Click="Hyperlink_Click">infiniti</Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 60 3" Width="100">
+                <Image Height="32" Width="32" Source="../Images/isuzu.png"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink Click="Hyperlink_Click">isuzu</Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 60 3" Width="100">
+                <Image Height="32" Width="32" Source="../Images/jeep.png"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink Click="Hyperlink_Click">jeep</Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 60 3" Width="100">
+                <Image Height="32" Width="32" Source="../Images/kia.png"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink Click="Hyperlink_Click">kia</Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 60 3" Width="100">
+                <Image Height="32" Width="32" Source="../Images/lancia.png"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink Click="Hyperlink_Click">lancia</Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 60 3" Width="100">
+                <Image Height="32" Width="32" Source="../Images/landrover.png"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink Click="Hyperlink_Click">landrover</Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 60 3" Width="100">
+                <Image Height="32" Width="32" Source="../Images/lexus.png"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink Click="Hyperlink_Click">lexus</Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 60 3" Width="100">
+                <Image Height="32" Width="32" Source="../Images/mazda.png"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink Click="Hyperlink_Click">mazda</Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 60 3" Width="100">
+                <Image Height="32" Width="32" Source="../Images/mercedes-benz.png"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink Click="Hyperlink_Click">mercedes-benz</Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 60 3" Width="100">
+                <Image Height="32" Width="32" Source="../Images/mitsubishi.png"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink Click="Hyperlink_Click">mitsubishi</Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 60 3" Width="100">
+                <Image Height="32" Width="32" Source="../Images/nissan.png"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink Click="Hyperlink_Click">nissan</Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 60 3" Width="100">
+                <Image Height="32" Width="32" Source="../Images/opel.png"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink Click="Hyperlink_Click">opel</Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 60 3" Width="100">
+                <Image Height="32" Width="32" Source="../Images/peugeot.png"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink Click="Hyperlink_Click">peugeot</Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 60 3" Width="100">
+                <Image Height="32" Width="32" Source="../Images/porsche.png"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink Click="Hyperlink_Click">porsche</Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 60 3" Width="100">
+                <Image Height="32" Width="32" Source="../Images/ram.png"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink Click="Hyperlink_Click">ram</Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 60 3" Width="100">
+                <Image Height="32" Width="32" Source="../Images/renault.png"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink Click="Hyperlink_Click">renault</Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 60 3" Width="100">
+                <Image Height="32" Width="32" Source="../Images/seat.png"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink Click="Hyperlink_Click">seat</Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 60 3" Width="100">
+                <Image Height="32" Width="32" Source="../Images/skoda.png"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink Click="Hyperlink_Click">skoda</Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 60 3" Width="100">
+                <Image Height="32" Width="32" Source="../Images/smart.png"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink Click="Hyperlink_Click">smart</Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 60 3" Width="100">
+                <Image Height="32" Width="32" Source="../Images/ssangyong.png"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink Click="Hyperlink_Click">ssangyong</Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 60 3" Width="100">
+                <Image Height="32" Width="32" Source="../Images/subaru (1).png"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink Click="Hyperlink_Click">subaru</Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 60 3" Width="100">
+                <Image Height="32" Width="32" Source="../Images/volvo.png"></Image>
+                <TextBlock Padding="7"> 
+                    <Hyperlink Click="Hyperlink_Click">volvo</Hyperlink>
+                </TextBlock>
+            </StackPanel>
+        </WrapPanel>
+    </Grid>
+</Page>

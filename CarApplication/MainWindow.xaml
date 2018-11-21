@@ -1,0 +1,137 @@
+﻿<Window x:Class="CarApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CarApplication"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="900">
+    <Grid>
+        <Grid.RowDefinitions>           
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+          
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TabControl Grid.Column="0" Grid.Row="0"  Grid.ColumnSpan="4" Grid.RowSpan="5">
+            <TabItem Header="Каталог производителей">                
+                <Grid>
+                    <Frame 
+                        Grid.Row="1" 
+                        Grid.Column="0" 
+                        Grid.ColumnSpan="4" 
+                        Grid.RowSpan="5" 
+                        x:Name="MainFrame" 
+                        Source="Pages/MainPage.xaml" 
+                        MouseLeftButtonDown="MainFrame_MouseLeftButtonDown">                        
+                    </Frame>                   
+                </Grid>                
+            </TabItem>
+            <TabItem Header="VIN - номер">
+                <Grid>
+                    <WrapPanel Grid.Row="1" 
+                        Grid.Column="0" 
+                        Grid.ColumnSpan="4" 
+                        Grid.RowSpan="2" >
+                        <StackPanel Margin="15">
+                            <StackPanel>
+                                <Label Content="Введите VIN (17 знаков), например JTMHT05J505044090" Margin="3 10 10 0"></Label>
+                                <WrapPanel Margin="8 0 10 10">
+                                    <TextBox x:Name="tbxVIN" MinWidth="250"  MinHeight="25" Text="JTMHT05J505044090" Foreground="Gray" Padding="5"></TextBox>
+                                    <Button Content="Найти" MinWidth="100" Height="25" Background="White"></Button>
+                                </WrapPanel>
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Margin="15">
+                            <StackPanel>
+                                <Label Content="Ввведите код и номер кузова, например CK2A-0403374" Margin="3 10 10 0"></Label>
+                                <WrapPanel Margin="8 0 10 10">
+                                    <TextBox x:Name="tbx1" MinWidth="100"  Margin="0 0 10 0" MinHeight="25" Text="CK2A" Foreground="Gray" Padding="5"></TextBox>
+                                    <TextBox x:Name="tbx2" MinWidth="100"  Margin="0 0 10 0" MinHeight="25" Text="0403374" Foreground="Gray" Padding="5"></TextBox>
+                                    <Button Content="Найти" MinWidth="100" Height="25" Background="White" ></Button>
+                                </WrapPanel>
+                            </StackPanel>
+                        </StackPanel>
+                        <WrapPanel Margin="10 20 10 0">
+                            <Border BorderBrush="DarkBlue" BorderThickness="1" Margin="10" Background="White">
+                                <DockPanel>
+                                    <TextBox DockPanel.Dock="Left" Width="15" Background="DarkBlue"></TextBox>
+                                    <Image Source="Images/quote-close2.png" Width="30" Height="30" Margin="5" VerticalAlignment="Top"></Image>                                    
+                                    <TextBlock   
+                                    MaxWidth="350"
+                                    MaxHeight="300"
+                                    TextWrapping="Wrap"
+                                    TextAlignment="Justify"
+                                    Padding="10"
+                                    Foreground="DarkBlue"                               
+                                    Text="Идентификационный номер транспортного средства (англ. Vehicle identification number, VIN) — уникальный код транспортного средства, состоящий из 17 знаков. В коде представлены сведения о производителе и характеристиках транспортного средства, а также о годе выпуска. Этот код спросят у вас в любом магазине запчастей. По VIN-коду вы можете проверить дату выпуска автомобиля, проверить его на угон и т.д."></TextBlock>
+                                
+                                </DockPanel>
+                                
+                            </Border>
+                            <Border BorderBrush="DarkBlue" BorderThickness="1" Margin="10" Background="White">
+                                <DockPanel>
+                                    <TextBox DockPanel.Dock="Left" Width="15" Background="DarkBlue"></TextBox>
+                                    <Image Source="Images/quote-close2.png" Width="30" Height="30" Margin="5" VerticalAlignment="Top"></Image>
+                                    <TextBlock
+                                    MaxWidth="350"
+                                    MaxHeight="300"
+                                    TextWrapping="Wrap"
+                                    TextAlignment="Justify"
+                                    Padding="10"
+                                    Foreground="DarkBlue"
+                                    Text="Номер кузова – это код, состоящий из букв и цифр в разном количестве, что зависит от конкретного производителя. Его длина может составлять от 9 до 12 символов. Первые 4-6 знаков рассказывают о типе и марке кузова авто. Оставшиеся 5-8 – заводской номер конкретного автомобиля. На автомашине номер кузова обычно выбивается на металлической табличке под капотом. При этом у разных марок авто эта табличка может распологаться в совершенно разных местах."></TextBlock>
+                                </DockPanel>
+                               
+                            </Border>                            
+                        </WrapPanel>
+                    </WrapPanel>
+                    
+                </Grid>
+            </TabItem>
+            <TabItem Header="Номер детали">
+                <Grid>
+                    <WrapPanel Grid.Row="1" 
+                        Grid.Column="0" 
+                        Grid.ColumnSpan="4" 
+                        Grid.RowSpan="5" >
+                        <StackPanel Margin="10 20 10 50">
+                            <Label Content="Для выполнения поиска введите номер детали, например 1002101" Margin="3 10 10 0"></Label>
+                            <WrapPanel Margin="8 0 10 10">
+                                <TextBox MinWidth="450"  MinHeight="25" Text="1002101" Foreground="Gray" Padding="5"></TextBox>
+                                <Button Content="Найти" MinWidth="100" Height="25" Background="White"></Button>
+                            </WrapPanel>
+                        </StackPanel>
+                        <Border BorderBrush="DarkBlue" BorderThickness="1" Margin="10" Background="White">
+                            <DockPanel>
+                                <TextBox DockPanel.Dock="Left" Width="15" Background="DarkBlue"></TextBox>
+                                <Image Source="Images/quote-close2.png" Width="50" Height="30" Margin="5" VerticalAlignment="Top"></Image>
+                                <TextBlock   
+                                MaxWidth="700"
+                                MaxHeight="300"
+                                TextWrapping="Wrap"
+                                TextAlignment="Justify"
+                                Padding="10"
+                                Foreground="DarkBlue"                               
+                                Text="Код детали (артикул) — маркировка завода-изготовителя, однозначно идентифицирующая деталь автомобиля. Маркировку можно найти на детали, на упаковке или в сопроводительной документации если на детали по какой либо причине нанесение номера невозможно. Наиболее простой способ узнать номер артикула - найти заводскую маркировку на поверхности детали если есть возможность ее демонтировать. Если код детали вам уже известен - впишите его в поле 'Номер детали'."></TextBlock>
+
+                            </DockPanel>
+                        </Border>
+
+
+                    </WrapPanel>
+                </Grid>
+            </TabItem>            
+        </TabControl>
+
+    </Grid>
+</Window>
